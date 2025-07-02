@@ -1,0 +1,57 @@
+.ydHeaderNavItem {
+  color: red !important;
+  &:hover {
+    background-color: var(--primary-color) !important;
+  }
+}
+.animation{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: test 3s;
+  animation-fill-mode: forwards;
+  background-image: url(../../../logo.svg);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@keyframes test {
+  0%{
+    background-image: url(../../../logo.svg);
+    transform: rotateY(0);
+  }
+  90% {
+    background-image: url(../../../logo.svg);
+  }
+  100% {
+    transform: rotateY(360deg);
+    background-color: blue;
+  }
+}
+.box {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  font-size: 32px;
+  color: red;
+  text-align: center;
+  #lapm {
+      width: 100%;
+      height: 100%;
+  }
+  #signCanvas {
+      width: 100%;
+      height: 100%;
+      // background: #fff;
+      border: none;
+      box-sizing: border-box;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 40px;
+      z-index: 1111111112;
+  }
+}
